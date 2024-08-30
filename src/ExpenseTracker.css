@@ -1,0 +1,115 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.expense-tracker {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    color: #4a90e2;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Form */
+.expense-tracker div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+}
+
+button {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+/* Expenses List */
+.expenses-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expenses-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.expenses-list li:hover {
+    background-color: #eef5ff;
+}
+
+.expenses-list li span {
+    font-size: 1rem;
+    color: #4a90e2;
+}
+
+.expenses-list li button {
+    padding: 5px 15px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.expenses-list li button:hover {
+    background-color: #c0392b;
+}
